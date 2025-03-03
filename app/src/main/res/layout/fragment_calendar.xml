@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/titleUpcomingEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📅 Upcoming Events"
+        android:textSize="22sp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+    android:layout_marginBottom="12dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="6dp"
+    android:background="@drawable/title_underline"
+    android:elevation="4dp"/>
+
+    <!-- Список событий -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        android:clipToPadding="false"/>
+</LinearLayout>
